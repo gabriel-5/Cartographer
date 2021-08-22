@@ -20,16 +20,16 @@
 }
 
 .cell{
-    height: 20px;
-    width: 20px;
+    /* height: 20px;
+    width: 20px; */
     box-sizing: border-box;
     /* border:0.1px solid rgb(17, 19, 173); */
 }
 
 .hover{
     background-color: rgb(83, 76, 76);
-    height: 20px;
-    width: 20px;
+    /* height: 20px;
+    width: 20px; */
     box-sizing: border-box;
     /* border:0.1px solid rgb(17, 19, 173);   */
 }
