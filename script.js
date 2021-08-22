@@ -16,6 +16,8 @@ function gameSetup(n) {
             cell.style.height = `${cellSize}px`;      // this is calculated by taking the width of the gridContainer and dividing
         }                                             // it by the value of cellAmount 
     }
+
+
     let cells = document.querySelectorAll(".cell");
     cells.forEach(c => {
         c.addEventListener("mouseover", () => {
