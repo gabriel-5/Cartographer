@@ -2,23 +2,25 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 960px;
-    width: 960px;
+    height: 320px;
+    width: 320px;
+    position: absolute;
     
     
     
 }
 
 .cell{
-    height: 60px;
-    width: 60px;
+    position: relative;
+    height: 20px;
+    width: 20px;
     border:0.1px solid rgb(17, 19, 173);
     box-sizing: border-box;
 }
 
 .hover{
     background-color: red;
-    height: 60px;
-    width: 60px;
+    height: 20px;
+    width: 20px;
     border:0.1px solid rgb(17, 19, 173);  
 }
