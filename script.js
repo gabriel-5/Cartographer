@@ -1,39 +1,42 @@
 let gridContainer = document.querySelector("#grid-container");
-
+let resetButton = document.querySelector("reset-button")
 let cellAmount = 16;
-
 let cellSize = 320 / cellAmount;
 
-for (i = 0; i < cellAmount; i++) {
-    for (let j = 0; j < cellAmount; j++) {
 
-        let cell = document.createElement("div");
-        cell.classList.add("cell");
-        gridContainer.appendChild(cell);
-        cell.style.width = `${cellSize}px`;
-        cell.style.height = `${cellSize}px`;
+
+function gameSetup(n) {
+
+    for (i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+            let cell = document.createElement("div"); //create cells in the DOM
+            cell.classList.add("cell");               //applies class "cell" to the cells
+            gridContainer.appendChild(cell);          //appends them as a child to the gridContainer div
+            cell.style.width = `${cellSize}px`;       //sets height and width depending on initial cellAmount variable
+            cell.style.height = `${cellSize}px`;      // this is calculated by taking the width of the gridContainer and dividing
+        }                                             // it by the value of cellAmount 
     }
-
+    let cells = document.querySelectorAll(".cell");
+    cells.forEach(c => {
+        c.addEventListener("mouseover", () => {
+            c.classList.add("hover");
+        }
+        )
+    })
 }
 
-const cells = document.querySelectorAll(".cell");
+gameSetup(cellAmount);
 
-const resetButton = document.getElementById("reset-button")
+
 
 resetButton.addEventListener("click", () => {
+    let cells = document.querySelectorAll(".cell");
     cells.forEach(c => {
-        c.classList.remove("hover");
+        c.remove();
     })
+    cellAmount = prompt("How many columns/rows?");
+    cellSize = 320 / cellAmount;
+    gameSetup(cellAmount);
+
+
 })
-
-cells.forEach(c => {
-    c.addEventListener("mouseover", () => {
-        c.classList.add("hover");
-    }
-    )
-})
-
-
-
-
-

@@ -1,4 +1,12 @@
 
+body{
+    background-image: url("clear.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+
+}
+
 #container-container{
     display: flex;
     justify-content: center;
@@ -13,23 +21,22 @@
     width: 320px;
     border: 30px ridge grey;
     margin: 4em;
+    background-image: url("slate.jpg");
+
 }
 
 #reset-button {
     margin: 6em;
+    background-image: url("magma.webp");
+    color: blue;
+    
 }
 
 .cell{
-    /* height: 20px;
-    width: 20px; */
     box-sizing: border-box;
-    /* border:0.1px solid rgb(17, 19, 173); */
 }
 
 .hover{
-    background-color: rgb(83, 76, 76);
-    /* height: 20px;
-    width: 20px; */
+    background-color: rgb(223, 74, 74);
     box-sizing: border-box;
-    /* border:0.1px solid rgb(17, 19, 173);   */
 }
