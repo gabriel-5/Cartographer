@@ -1,6 +1,6 @@
 let gridContainer = document.querySelector("#grid-container");
 
-let cellAmount = 8;
+let cellAmount = 16;
 
 let cellSize = 320 / cellAmount;
 
