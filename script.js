@@ -1,5 +1,5 @@
 let gridContainer = document.querySelector("#grid-container");
-let resetButton = document.querySelector("reset-button")
+let resetButton = document.querySelector("#reset-button")
 let cellAmount = 16;
 let cellSize = 320 / cellAmount;
 
