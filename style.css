@@ -1,26 +1,35 @@
+
+#container-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
 #grid-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     height: 320px;
     width: 320px;
-    position: absolute;
-    
-    
-    
+    border: 30px ridge grey;
+    margin: 4em;
+}
+
+#reset-button {
+    margin: 6em;
 }
 
 .cell{
-    position: relative;
     height: 20px;
     width: 20px;
-    border:0.1px solid rgb(17, 19, 173);
     box-sizing: border-box;
+    /* border:0.1px solid rgb(17, 19, 173); */
 }
 
 .hover{
-    background-color: red;
+    background-color: rgb(83, 76, 76);
     height: 20px;
     width: 20px;
-    border:0.1px solid rgb(17, 19, 173);  
+    box-sizing: border-box;
+    /* border:0.1px solid rgb(17, 19, 173);   */
 }
