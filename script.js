@@ -1,5 +1,10 @@
 let gridContainer = document.querySelector("#grid-container");
 let resetButton = document.querySelector("#reset-button")
+let brickButton = document.querySelector("#brick-button")
+let fireButton = document.querySelector("#fire-button")
+let iceButton = document.querySelector("#ice-button")
+let material = "brick"
+
 let cellAmount = 16;
 let cellSize = 320 / cellAmount;
 
@@ -17,19 +22,16 @@ function gameSetup(n) {
         }                                             // it by the value of cellAmount 
     }
 
-
     let cells = document.querySelectorAll(".cell");
     cells.forEach(c => {
         c.addEventListener("mouseover", () => {
-            c.classList.add("hover");
+            c.classList.add(material);
         }
         )
     })
 }
 
 gameSetup(cellAmount);
-
-
 
 resetButton.addEventListener("click", () => {
     let cells = document.querySelectorAll(".cell");
@@ -39,6 +41,19 @@ resetButton.addEventListener("click", () => {
     cellAmount = prompt("How many columns/rows?");
     cellSize = 320 / cellAmount;
     gameSetup(cellAmount);
+})
+
+iceButton.addEventListener("click", () => {
+    material = "ice";
+})
 
 
+brickButton.addEventListener("click", () => {
+    material = "brick";
+})
+
+
+
+fireButton.addEventListener("click", () => {
+    material = "fire";
 })

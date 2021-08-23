@@ -29,6 +29,35 @@ body{
     margin: 6em;
     background-image: url("magma.webp");
     color: blue;
+    border: 5px ridge rgb(156, 90, 241);
+
+    
+}
+
+#brick-button {
+    margin: 6em;
+    background-image: url("brick.jpg");
+    color: blue;
+    border: 5px ridge rgb(109, 40, 40);
+
+    
+}
+
+#fire-button {
+    margin: 6em;
+    background-image: url("fire.jpg");
+    color: blue;
+    border: 5px ridge brown;
+
+    
+}
+
+#ice-button {
+    margin: 6em;
+    background-image: url("ice.jpg");
+    color: blue;
+    border: 5px ridge rgb(177, 177, 177);
+
     
 }
 
@@ -36,7 +65,19 @@ body{
     box-sizing: border-box;
 }
 
-.hover{
+.brick{
     background-image: url("brick.jpg") ;
     box-sizing: border-box;
 }
+
+.fire{
+    background-image: url("fire.jpg") ;
+    box-sizing: border-box;
+}
+
+.ice{
+    background-image: url("ice.jpg") ;
+    box-sizing: border-box;
+}
+
+
